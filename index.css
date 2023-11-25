@@ -32,7 +32,7 @@ header {
 }
 
 body {
-    background: url("/images/the-last-of-us-tlou-day.jpeg") no-repeat;
+    background: url("the-last-of-us-tlou-day.jpeg") no-repeat;
     background-size: cover;
     width: 1440px;
     height: 1000px;
