@@ -31,15 +31,6 @@ header {
     background-color: black;
 }
 
-body {
-    background: url("/images/the-last-of-us-tlou-day.jpeg") no-repeat;
-    background-size: cover;
-    width: 1440px;
-    height: 1000px;
-}
-
-
-
 .icons a:hover {
     color: var(--blue);
 }
@@ -110,8 +101,8 @@ body {
     display: inline-block;
 }
 
-.ul .nav a:hover {
-    color: var(--blue);
+.nav li a:hover {
+    color: var(--red);
 }
 
 .menu {
@@ -129,46 +120,128 @@ body {
 
 }
 
+body {
+    background: #202020;
+    background-size: cover;
+    width: 1440px;
+    height: 1200px;
+}
 
-
-
-
-
-
-.menu2 {
-    background: rgba(46, 81, 148, 0.30);
-    width: 1111px;
-    height: 254px;
-    margin-top: 230px;
-    padding: 0 2rem;
+.console-menu {
+    display: flex;
+    margin-top: 215px;
+    margin-left: 100px;
+    justify-content: space-between;
+    margin-right: 100px;
+    padding: 0 auto;
 
 }
 
-.menu2 h1 {
-    color: white;
+.console-menu>.console-box {
+    background: #000;
+    border-radius: 38px;
+    border: 1px solid #000;
+    width: 400px;
+    height: 400px;
+}
+
+.console-box img {
+    position: absolute;
+    top: 455px;
+    left: 180px;
+}
+
+.console-menu>.console-box1 {
+    background: #000;
+    border-radius: 38px;
+    width: 400px;
+    height: 400px;
+}
+
+.console-box1 img {
+    position: absolute;
+    top: 445px;
+    left: 605px;
+}
+
+.console-menu>.console-box2 {
+    background: #000;
+    border-radius: 38px;
+    width: 400px;
+    height: 400px;
+}
+
+.console-box2 img {
+    position: absolute;
+    top: 445px;
+
+}
+
+.Name {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+
+}
+
+.Name>.sony {
+    margin-left: 100px;
+    margin-top: 20px;
     font-family: 'Orbitron', sans-serif;
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 50px;
-
+    font-size: 40px;
 }
 
-.menu2 h1 a {
+.Name>.sony>a {
     color: white;
 }
 
-.menu2 a:hover {
+.Name>.sony>a:hover {
     color: var(--red);
 }
 
-.content2 {
+.Name>.xbox {
+    margin-right: 50px;
+    margin-top: 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+}
 
+.Name>.xbox>a {
     color: white;
-    font-size: 40px;
-    font-family: 'Alumni Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 10px;
+}
 
+.Name>.xbox>a:hover {
+    color: var(--red);
+}
+
+.Name>.nintendo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 190px;
+}
+
+.Name>.nintendo>a {
+    color: white;
+}
+
+.Name>.nintendo>a:hover {
+    color: var(--red);
+}
+
+
+
+
+.box a {
+    color: white;
+
+
+}
+
+.footer {
+    background: #000;
+    width: 1440px;
+    margin-top: 300px;
 }
 
 .footer .box-container {
@@ -209,10 +282,6 @@ svg:hover path {
 
 }
 
-.box a:hover {
-    color: var(--red);
-}
-
 .credit {
     background-color: black;
     text-align: center;
@@ -222,4 +291,8 @@ svg:hover path {
     width: 1440px;
 
     font-weight: 100;
+}
+
+.box a:hover {
+    color: var(--red);
 }
