@@ -114,6 +114,10 @@ body {
     color: var(--blue);
 }
 
+.nav li a:hover {
+    color: var(--red);
+}
+
 .menu {
     display: inline-block;
     justify-content: space-between;

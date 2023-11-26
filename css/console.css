@@ -105,6 +105,23 @@ header {
     color: var(--red);
 }
 
+.back {
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.back>a {
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+.back>a:hover {
+    color: var(--red);
+}
+
 .menu {
     display: inline-block;
     justify-content: space-between;
@@ -147,7 +164,7 @@ body {
 
 .console-box img {
     position: absolute;
-    top: 455px;
+    top: 498px;
     left: 180px;
 }
 
@@ -160,7 +177,7 @@ body {
 
 .console-box1 img {
     position: absolute;
-    top: 445px;
+    top: 495px;
     left: 605px;
 }
 
@@ -173,7 +190,7 @@ body {
 
 .console-box2 img {
     position: absolute;
-    top: 445px;
+    top: 495px;
 
 }
 
