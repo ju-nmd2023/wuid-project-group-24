@@ -138,10 +138,9 @@ header {
 }
 
 body {
-    background: #202020;
-    background-size: cover;
+    background: #202020 no-repeat;
     width: 1440px;
-    height: 1200px;
+    height: 900px;
 }
 
 .console-menu {
@@ -246,7 +245,31 @@ body {
     color: var(--red);
 }
 
+.other {
+    background: #395DA2;
+    border-radius: 24px;
+    width: 468px;
+    height: 80px;
+    box-shadow: -2px 11px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 500px;
+    margin-top: 200px;
+    padding-top: 20px;
+}
 
+
+
+.other a {
+    color: #FFF;
+    margin-left: 65px;
+    padding-top: 80px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 31px;
+    margin-top: 200px;
+}
+
+.other a:hover {
+    color: var(--red);
+}
 
 
 .box a {
