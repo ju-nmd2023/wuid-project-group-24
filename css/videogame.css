@@ -32,10 +32,10 @@ header {
 }
 
 body {
-    background: url("/images/the-last-of-us-tlou-day.jpeg") no-repeat;
+    background: #202020 no-repeat;
     background-size: cover;
     width: 1440px;
-    height: 1000px;
+    height: 870px;
 }
 
 
@@ -133,96 +133,60 @@ body {
 
 }
 
-
-
-
-
-
-
-.menu2 {
-    background: rgba(46, 81, 148, 0.30);
-    width: 1111px;
-    height: 254px;
-    margin-top: 230px;
-    padding: 0 2rem;
-
-}
-
-.menu2 h1 {
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 50px;
-
-}
-
-.menu2 h1 a {
-    color: white;
-}
-
-.menu2 a:hover {
-    color: var(--red);
-}
-
-.content2 {
-
-    color: white;
-    font-size: 40px;
-    font-family: 'Alumni Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 10px;
-
-}
-
-.footer .box-container {
+/*new game setting*/
+.newgame {
+    background: url("/images/spiderman.png");
+    width: 1441px;
+    height: 808px;
     display: flex;
-    flex-direction: row;
-    width: 1440px;
-    height: 300px;
-    background-color: black;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-    font-family: 'Alumni Sans', sans-serif;
-    padding-top: 82px;
 
 }
 
-.box {
+.newgame .content pre {
+    color: #E72525;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 57px;
+    padding-top: 200px;
+    margin-left: -100px
+}
+
+.newgame>#check {
+    width: 258px;
+    height: 65px;
+    border-radius: 32px;
+    background: #395DA2;
+    box-shadow: 6px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 500px;
+    margin-left: -350px;
+}
+
+.newgame>#check>a {
     color: white;
-    font-size: 24px;
-    padding-left: 20px;
-}
-
-.box a {
-    color: white;
-
+    font-family: Alumni Sans;
+    font-size: 36px;
+    font-weight: bold;
 
 }
 
-
-
-svg:hover path {
-    fill: red;
-}
-
-.box-container a {
-    margin-top: 150px;
-    margin-left: 5px;
-
-}
-
-.box a:hover {
+#check a:hover {
     color: var(--red);
 }
 
-.credit {
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 20px;
+/*video menu list setting*/
+.vmenu {
+    background: rgba(33, 33, 33, 1);
     width: 1440px;
-    font-weight: 100;
+    height: 1000px;
+}
+
+.vmenu .vmenubox {
+    background: rgba(0, 0, 0, 0.34);
+    width: 1356px;
+    height: 1297px;
+
+}
+
+.vmenubox>h1 {
+    color: #FFF;
 }
