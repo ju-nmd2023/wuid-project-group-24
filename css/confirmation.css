@@ -31,15 +31,6 @@ header {
     background-color: black;
 }
 
-body {
-    background: url("images/the-last-of-us-tlou-day.jpeg") no-repeat;
-    background-size: cover;
-    width: 1440px;
-    height: 1000px;
-}
-
-
-
 .icons a:hover {
     color: var(--blue);
 }
@@ -110,11 +101,24 @@ body {
     display: inline-block;
 }
 
-.ul .nav a:hover {
-    color: var(--blue);
+.nav li a:hover {
+    color: var(--red);
 }
 
-.nav li a:hover {
+.back {
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.back>a {
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+.back>a:hover {
     color: var(--red);
 }
 
@@ -133,48 +137,57 @@ body {
 
 }
 
-
-
-
-
-
-
-.menu2 {
-    background: rgba(46, 81, 148, 0.30);
-    width: 1111px;
-    height: 254px;
-    margin-top: 230px;
-    padding: 0 2rem;
+body {
+    background: #202020 no-repeat;
+    width: 1440px;
+    height: 900px;
 
 }
 
-.menu2 h1 {
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 50px;
-
+.check-mark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 15%;
 }
 
-.menu2 h1 a {
-    color: white;
+.confirmation-box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%;
 }
 
-.menu2 a:hover {
-    color: var(--red);
-}
-
-.content2 {
-
-    color: white;
-    font-size: 40px;
+.check-text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 30px;
     font-family: 'Alumni Sans', sans-serif;
-    font-weight: 500;
-    margin-top: 10px;
-
+    color: white;
 }
 
+.check-text h1 {
+    letter-spacing: 1.2px;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.check-text p {
+    font-size: 24px;
+}
+
+
+
+.footer {
+    background: #000;
+    width: 1440px;
+    margin-top: 300px;
+}
 .footer .box-container {
     display: flex;
     flex-direction: row;
@@ -186,19 +199,6 @@ body {
     padding: 30px;
     font-family: 'Alumni Sans', sans-serif;
     padding-top: 82px;
-
-}
-
-.box {
-    color: white;
-    font-size: 24px;
-    padding-left: 20px;
-}
-
-.box a {
-    color: white;
-
-
 }
 
 
@@ -213,10 +213,6 @@ svg:hover path {
 
 }
 
-.box a:hover {
-    color: var(--red);
-}
-
 .credit {
     background-color: black;
     text-align: center;
@@ -224,5 +220,22 @@ svg:hover path {
     font-family: 'Alumni Sans', sans-serif;
     font-size: 20px;
     width: 1440px;
+
     font-weight: 100;
+}
+
+.box a:hover {
+    color: var(--red);
+}
+
+.box {
+    color: white;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.box a {
+    color: white;
+
+
 }
