@@ -163,7 +163,7 @@ body {
 
 .newgame>#check>a {
     color: white;
-    font-family: Alumni Sans;
+    font-family: 'Alumni Sans';
     font-size: 36px;
     font-weight: bold;
 
@@ -175,18 +175,156 @@ body {
 
 /*video menu list setting*/
 .vmenu {
-    background: rgba(33, 33, 33, 1);
+    background: #212121;
     width: 1440px;
-    height: 1000px;
+    height: 1150px;
 }
 
-.vmenu .vmenubox {
+.vmenu>.vmenubox {
     background: rgba(0, 0, 0, 0.34);
     width: 1356px;
-    height: 1297px;
+    height: 1350px;
+    margin: 80px auto;
+}
+
+.vmenu>.vmenubox>h1 {
+    color: white;
+    padding: 2rem 2rem;
+    margin-left: 320px;
+    font-family: 'Orbitron', sans-serif;
+    justify-content: center;
+    font-size: 73px;
+}
+
+.menu-list {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+
+.menu-list button {
+    width: 378px;
+    height: 261px;
+    border-radius: 32px;
+    background: linear-gradient(180deg, #395DA2 0%, rgba(57, 93, 162, 0.84) 0.01%, rgba(57, 93, 162, 0.15) 79.17%, rgba(57, 93, 162, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-list button#playstation {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+}
+
+.menu-list button#xbox {
+    margin-right: 50px;
+}
+
+.menu-list button#vr {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-list button#new-release {
+    margin-right: 50px;
+}
+
+.menu-list button a {
+    color: white;
+    font-size: 58px;
+    font-family: 'Alumni Sans';
+    font-weight: bold;
+}
+
+.menu-list button a:hover {
+    color: var(--red);
+}
+
+.menu-list h3 {
+    color: white;
+    margin-left: 50px;
+    font-family: 'Alumni Sans';
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menu-list .line {
+    width: 896px;
+    height: 3px;
+    background: #395DA2;
+    margin-left: 330px;
+    margin-top: -30px;
+}
+
+.Popular-game {
+    margin-left: 50px;
+    margin-top: 40px;
 
 }
 
-.vmenubox>h1 {
-    color: #FFF;
+.Popular-game img {
+    margin-right: 50px;
+}
+
+.footer {
+    background: #000;
+    width: 1440px;
+    margin-top: 300px;
+
+}
+
+.footer .box-container {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 300px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Alumni Sans', sans-serif;
+    padding-top: 82px;
+
+}
+
+.box {
+    color: white;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.box a {
+    color: white;
+
+
+}
+
+
+
+svg:hover path {
+    fill: red;
+}
+
+.box-container a {
+    margin-top: 150px;
+    margin-left: 5px;
+
+}
+
+.credit {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    width: 1440px;
+
+    font-weight: 100;
+}
+
+.box a:hover {
+    color: var(--red);
 }

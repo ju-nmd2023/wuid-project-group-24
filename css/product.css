@@ -152,16 +152,17 @@ body {
     padding: 5vh 10vh;
     background-color: rgba(0, 0, 0, 0.34);
     height: 500px;
-    
+
 }
 
-#images-product{
+#images-product {
     max-width: 50%;
     max-height: auto;
-    border: solid white 3px;
-    
+    border: solid white 10px;
+
 
 }
+
 .product-info {
     width: 1400px;
 }
@@ -171,7 +172,7 @@ body {
     color: white;
     font-family: 'Alumni Sans', sans-serif;
     font-size: 46px;
-    letter-spacing: 8px ;
+    letter-spacing: 8px;
     margin-left: 40px;
 }
 
@@ -187,12 +188,12 @@ body {
 }
 
 
-.info-box p{
+.info-box p {
     width: 400px;
     color: white;
     padding: 20px 20px;
     font-family: 'Alumni Sans', sans-serif;
-    font-weight:200;
+    font-weight: 200;
     font-size: 18px;
     line-height: 1.4;
 }
@@ -211,6 +212,14 @@ body {
     background-color: rgba(57, 93, 162);
     color: white;
     border-radius: 15px;
+    font-stretch: extra-condensed;
+    font-size: 18px;
+}
+
+.add-wish:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 100ms;
 }
 
 
@@ -220,11 +229,62 @@ body {
     background-color: rgba(57, 93, 162);
     color: white;
     border-radius: 15px;
+    font-stretch: extra-condensed;
+    font-size: 18px;
+}
+
+.add-cart:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 100ms;
 }
 
 .info-button a {
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+
+.custom-box {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.custom {
+    margin-right: 15vh;
+    flex-direction: row;
+}  
+
+.custom p {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1.2px; 
+    font-size: 18px;
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.price p {
+    font-family: 'Alumni Sans', sans-serif; 
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 0 20px;
+
+}
+
+.price {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;    
+    margin-top: 20px;
+}
+
+#quantity {
+    width: 100px;
+    margin-left: 200px;
+    height: 30px;
 }
 
 
@@ -285,4 +345,3 @@ svg:hover path {
 
 
 }
-
