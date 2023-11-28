@@ -10,7 +10,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-
 }
 
 html {
@@ -27,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 2.2%;
     background-color: black;
 }
 
@@ -52,35 +51,26 @@ header {
     background: #D9D9D9;
     width: 368px;
     height: 43px;
-    margin-left: 500px;
+    margin-left: 600px;
     flex-shrink: 0;
     padding: 10px;
-    margin-top: 10px;
 }
 
 .searchbar :nth-child(1) {
-    margin-top: 5px;
+    margin-top: 4px;
     margin-left: 10px;
     color: black;
-
 }
-
-
 
 .icons :nth-child(1) {
     color: white;
-    margin-top: 5px;
     font-size: 30px;
-
-
 }
 
 .icons :nth-child(2) {
     color: white;
     font-size: 28px;
     padding-left: 20px;
-    margin-top: 8px;
-
 }
 
 .icons :nth-child(3) {
@@ -94,31 +84,17 @@ header {
     height: 57px;
     margin-top: 0px;
     background: rgba(0, 0, 0, 0.29);
-
 }
 
 .nav li {
     display: inline-block;
 }
 
+.ul .nav a:hover {
+    color: var(--blue);
+}
+
 .nav li a:hover {
-    color: var(--red);
-}
-
-.back {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 20px;
-
-}
-
-.back>a {
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-
-}
-
-.back>a:hover {
     color: var(--red);
 }
 
@@ -133,8 +109,7 @@ header {
     font-weight: 700;
     line-height: normal;
     padding: 0 2.0rem;
-    margin-top: 20px;
-
+    margin-top: 14px;
 }
 
 body {
@@ -302,12 +277,19 @@ body {
     background-color: black;
     justify-content: center;
     text-align: center;
-    padding: 30px;
     font-family: 'Alumni Sans', sans-serif;
     padding-top: 82px;
 }
 
+.box {
+    color: white;
+    font-size: 20px;
+    padding-left: 80px;
+}
 
+.box a {
+    color: white;
+}
 
 svg:hover path {
     fill: red;
@@ -316,7 +298,10 @@ svg:hover path {
 .box-container a {
     margin-top: 150px;
     margin-left: 5px;
+}
 
+.box a:hover {
+    color: var(--red);
 }
 
 .credit {
@@ -326,22 +311,5 @@ svg:hover path {
     font-family: 'Alumni Sans', sans-serif;
     font-size: 20px;
     width: 1440px;
-
     font-weight: 100;
-}
-
-.box a:hover {
-    color: var(--red);
-}
-
-.box {
-    color: white;
-    font-size: 24px;
-    padding-left: 20px;
-}
-
-.box a {
-    color: white;
-
-
 }
