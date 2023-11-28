@@ -212,6 +212,8 @@ body {
     background-color: rgba(57, 93, 162);
     color: white;
     border-radius: 15px;
+    font-stretch: extra-condensed;
+    font-size: 18px;
 }
 
 .add-wish:hover {
@@ -227,6 +229,8 @@ body {
     background-color: rgba(57, 93, 162);
     color: white;
     border-radius: 15px;
+    font-stretch: extra-condensed;
+    font-size: 18px;
 }
 
 .add-cart:hover {
@@ -243,25 +247,24 @@ body {
 .custom-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     color: white;
     align-items: center;
     margin-top: 15px;
-    column-gap: 20px;
 }
 
 
 .custom {
-    margin-right: 12vh;
-}
+    margin-right: 15vh;
+    flex-direction: row;
+}  
 
 .custom p {
     font-family: 'Alumni Sans', sans-serif;
     font-weight: lighter;
-    letter-spacing: 1.2px;
-    margin-bottom: 5px; 
+    letter-spacing: 1.2px; 
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 200px;
+    justify-content: center;
 }
 
 .price p {
@@ -269,17 +272,21 @@ body {
     font-weight: lighter;
     font-size: 30px;
     padding: 0 20px;
+
 }
 
 .price {
     background-color: rgb(32, 32, 32);
-    border-radius: 5px;
+    border-radius: 5px;    
+    margin-top: 20px;
 }
 
 #quantity {
     width: 100px;
-    margin-left: 15px;
+    margin-left: 200px;
+    height: 30px;
 }
+
 
 .footer {
     background: #000;

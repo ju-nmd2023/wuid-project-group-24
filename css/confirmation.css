@@ -141,7 +141,8 @@ body {
     background: #202020 no-repeat;
     width: 1440px;
     height: 900px;
-
+    background-image: url(/images/Rectangle\ 92.png);
+    background-attachment: fixed;
 }
 
 .check-mark {
@@ -180,8 +181,6 @@ body {
 .check-text p {
     font-size: 24px;
 }
-
-
 
 .footer {
     background: #000;
