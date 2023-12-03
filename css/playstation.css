@@ -164,54 +164,115 @@ body {
     background-color: rgb(23, 23, 23);
     padding: 8%;
     display: grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 260px);
     row-gap: 30px;
-    column-gap: 50px;
+    column-gap: 70px;
     justify-content: center;
+}
+
+.playstation-container .product-container {
+    background: lightsteelblue;
+    border: 2px solid transparent;
+    box-shadow: inset;
+    height: 480px;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+    margin-left: -20px;
+
+
+}
+
+.playstation-container .product-container img {
+    margin-left: 4px;
+}
+
+.playstation-container .product-container .product-quantity-container {
+    margin-left: 230px;
+    margin-top: -10px;
+}
+
+.playstation-container .product-container .product-name {
+    color: white;
+    font-size: 18px;
+    margin-left: 3px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.playstation-container .product-container .product-price {
+    font-size: 15px;
+    color: #FFF;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.playstation-container .add-to-cart {
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+    font-size: 14px;
+    font-family: 'Alumni Sans', sans-serif;
+
+}
+
+.playstation-container .add-to-heart {
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+}
+
+.playstation-container .add-to-heart p {
+    margin-left: 2px;
+    font-size: 14px;
+    margin-right: 2px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.playstation-container .add-to-cart p {
+    margin-left: 2px;
+    font-size: 14px;
+    margin-right: 2px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+
+
+.playstation-container .add-to-cart:hover {
+    background-color: rgb(247, 202, 0);
+    border: 1px solid rgb(242, 194, 0);
+}
+
+.playstation-container .add-to-cart:active {
+    background: rgb(255, 216, 20);
+    border-color: rgb(252, 210, 0);
+    box-shadow: none;
+}
+
+.playstation-container .add-to-heart:hover {
+    background-color: rgb(247, 202, 0);
+    border: 1px solid rgb(242, 194, 0);
+}
+
+.playstation-container .add-to-heart:active {
+    background: rgb(255, 216, 20);
+    border-color: rgb(252, 210, 0);
+    box-shadow: none;
 }
 
 img {
     max-width: 260px;
 }
-
-.name-symbols {
-    display: flex;
-    color: white;
-    justify-content: center;
-    gap: 10px;
-    font-size: 20px;
-    font-family: 'Alumni Sans', sans-serif;
-}
-
-.name-symbols a {
-    margin-top: 4px;
-}
-
-.name-symbols a:hover {
-    color: #ed1c24;
-}
-
-.name-symbols p {
-    margin-top: 2px;
-}
-
-a {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-/*.prize {
-    display: flex;
-    color: white;
-    justify-content: center;
-    font-size: 15px;
-    gap: 10px;
-    margin-top: 10px;
-}*/
-
 
 .menu {
     display: inline-block;
