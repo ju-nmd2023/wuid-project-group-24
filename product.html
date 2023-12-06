@@ -61,17 +61,14 @@
       <a href="#"> > XBOX SERIES X</a>
     </div>
 
-    <section class="product">
-      <div class="product-container">
-        <img
-          id="images-product"
-          src="https://cdn.sweclockers.com/artikel/bild/81375?l=eyJyZXNvdXJjZSI6IlwvYXJ0aWtlbFwvYmlsZFwvODEzNzUiLCJmaWx0ZXJzIjpbInQ9cGFuZUJhbm5lciJdLCJwYXJhbXMiOnsiY2FjaGVCdXN0ZXIiOiIyMDIxMDUwMSJ9LCJrZXkiOiI5OGYyNmQyYjM2ZTZmNTFmN2NiOTBiZDM1NjU2ZDdkMSJ9"
-          alt="XBOX PIC"
-        />
+    <section class="xbox-container">
+      <div class="xbox-photo">
+        <img class="xbox-img" src="PS-images/Xbox-product.png" alt="xboxphoto">
+        </div>
 
         <div class="product-info">
           <h1>XBOX SERIES X</h1>
-          <div class="info-box">
+          <div class="info-container">
             <p>
               Unleash gaming perfection with the Xbox Series X. Featuring 12
               teraflops of power, ultra-fast load times, and 4K gaming at 60FPS
@@ -82,20 +79,17 @@
               gaming, order your Xbox Series X now.
             </p>
               <div class="btn">
-            <button class="btn-cart" onclick="increaseCounter()">ADD TO CART</button>
-            <button class="btn-heart" onclick="increaseCounter()">ADD TO HEART</button>
+            <button class="btn-cart"  onclick="increaseCounter() "addToCart()>ADD TO CART</button>
+            <button class="btn-heart" onclick="increaseHeart()">ADD TO HEART</button>
           </div>
         </div>
 
-
+        <div class="quantity-price">
         <div class="product">
           <input type="number" id="quantity" value="1" min="1"/> 
-         
-          
-          </div class="price">
           <h6>$19.99</h6>
         </div>
-      
+      </div>
 
       
     </section>
@@ -176,6 +170,6 @@
       <!--footer section end-->
     </section>
 
-    <script src="js/product.js"></script>
+    <script src="js/xbox.js"></script>
   </body>
 </html>
