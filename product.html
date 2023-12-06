@@ -25,25 +25,24 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Orbitron:wght@800&family=Playpen+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
+    <script src="js/xbox.js"></script>
   </head>
 
   <body>
     <header>
-        <div class="LOGO">
-            <a href="#" class="logo">LOGO<span></span></a>
-        </div>
-        <div class="searchbar">
-            <a href="#" class="fas fa-search" width="48px" height="48px"></a>
-        </div>
-        <div class="icons">
-            <a href="#" class="fas fa-user"></a>
-            <a href="#" class="fas fa-heart js-heart-quantity">
-                0
-            </a>
-            <a href="#" class="fas fa-shopping-cart">
-                <span class="counter js-cart-quantity">0</span>
-            </a>
-        </div>
+      <div class="LOGO">
+        <a href="index.html" class="logo">LOGO<span></span></a>
+      </div>
+      <div class="searchbar">
+        <a href="#" class="fas fa-search" width="48px" height="48px"></a>
+      </div>
+      <div class="icons">
+        <a href="customer-profile.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-heart js-heart-quantity"> 0 </a>
+        <a href="shopping cart.html" class="fas fa-shopping-cart">
+          <span class="counter js-cart-quantity">0</span>
+        </a>
+      </div>
     </header>
     <!--nav section start-->
     <div class="images">
@@ -67,7 +66,7 @@
         <img
           id="images-product"
           src="https://cdn.sweclockers.com/artikel/bild/81375?l=eyJyZXNvdXJjZSI6IlwvYXJ0aWtlbFwvYmlsZFwvODEzNzUiLCJmaWx0ZXJzIjpbInQ9cGFuZUJhbm5lciJdLCJwYXJhbXMiOnsiY2FjaGVCdXN0ZXIiOiIyMDIxMDUwMSJ9LCJrZXkiOiI5OGYyNmQyYjM2ZTZmNTFmN2NiOTBiZDM1NjU2ZDdkMSJ9"
-          alt=""
+          alt="XBOX PIC"
         />
 
         <div class="product-info">
@@ -80,24 +79,25 @@
               tracing, backward compatibility, Quick Resume, and spatial audio
               for an immersive experience. With Xbox Game Pass, Smart Delivery,
               and a sleek design, the future of gaming is here. Elevate your
-              gaming – order your Xbox Series X now.
+              gaming, order your Xbox Series X now.
             </p>
-
-            <div class="info-button">
-              <button class="add-wish js-add-wish " >
-                ADD TO WISHLIST
-              </button>
-
-              <button class="add-cart js-add-wish">
-                ADD TO CART
-              </button>
+              <div class="btn">
+            <button class="btn-cart" onclick="increaseCounter()">ADD TO CART</button>
+            <button class="btn-heart" onclick="increaseCounter()">ADD TO HEART</button>
           </div>
         </div>
 
-          <div class="price">
-            $679.00
-          </div>
 
+        <div class="product">
+          <input type="number" id="quantity" value="1" min="1"/> 
+         
+          
+          </div class="price">
+          <h6>$19.99</h6>
+        </div>
+      
+
+      
     </section>
 
     <section class="footer">
@@ -175,5 +175,7 @@
       </div>
       <!--footer section end-->
     </section>
+
+    <script src="js/product.js"></script>
   </body>
 </html>
