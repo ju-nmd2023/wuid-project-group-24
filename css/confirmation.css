@@ -3,31 +3,45 @@
     --red: #ed1c24;
 }
 
-* {
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
+    width: 100%;
+    height: 100vh;
 
+    /*delete later*/
+    background-color: rgb(0, 0, 0);
+    background-image: url(../images/blue-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/*HEADER CONTENT*/
 header {
-    width: 1440px;
-    height: 90px;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 2.2%;
-    background-color: black;
+}
+
+.icons {
+    margin-left: auto;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 15px;
+    color: white;
 }
 
 .icons a:hover {
@@ -38,8 +52,9 @@ header {
     color: #395DA2;
     font-weight: bolder;
     font-size: 50px;
-    font-style: normal;
     font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
 }
 
 .LOGO a:hover {
@@ -50,93 +65,46 @@ header {
     border-radius: 30px;
     background: #D9D9D9;
     width: 368px;
-    height: 43px;
-    margin-left: 600px;
+    height: 20px;
     flex-shrink: 0;
     padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
 }
 
 .searchbar :nth-child(1) {
-    margin-top: 4px;
-    margin-left: 10px;
     color: black;
+    text-decoration: none;
+    margin-top: 2px;
 }
 
-.icons :nth-child(1) {
-    color: white;
-    font-size: 30px;
-}
-
-.icons :nth-child(2) {
-    color: white;
-    font-size: 28px;
-    padding-left: 20px;
-}
-
-.icons :nth-child(3) {
-    color: white;
-    font-size: 28px;
-    padding-left: 20px;
-}
-
-.nav {
-    width: 1440px;
+.nav ul{
     height: 57px;
-    margin-top: 0px;
     background: rgba(0, 0, 0, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 30px 0 30px;
+    gap: 30px;
 }
 
-.nav li {
-    display: inline-block;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-.ul .nav a:hover {
-    color: var(--blue);
+ul a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
 }
 
 .nav li a:hover {
     color: var(--red);
 }
 
-.menu {
-    display: inline-block;
-    justify-content: space-between;
-    text-align: center;
-    color: #FFF;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 0 2.0rem;
-    margin-top: 14px;
-}
-
-.back {
-    margin-left: 20px;
-    font-size: 20px;
-    padding: 20px;
-
-}
-
-.back>a {
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-
-}
-
-.back>a:hover {
-    color: var(--red);
-}
-
-
-body {
-    background: #202020 no-repeat;
-    width: 1440px;
-    height: 900px;
-    background-image: url(/images/Rectangle\ 92.png);
-    background-attachment: fixed;
-}
 
 .check-mark {
     display: block;
@@ -148,15 +116,15 @@ body {
 
 .confirmation-box{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 100px;
-    width: 50%;
+    margin-bottom: 100px;
+    width: 100%;
 }
 
 .check-text{
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -166,62 +134,153 @@ body {
 }
 
 .check-text h1 {
-    letter-spacing: 1.2px;
     font-weight: bolder;
-    font-size: 38px;
+    font-size: 40px;
+    margin: 0 30px 0 30px;
 }
 
 .check-text p {
-    font-size: 24px;
+    font-size: 30px;
+    margin: 0 30px 0 30px;
 }
 
-.footer {
-    background: #000;
-    width: 1440px;
-    margin-top: 300px;
-}
+/*FOOTER CONTENT*/ 
 
 .footer .box-container {
     display: flex;
     flex-direction: row;
-    width: 1440px;
-    height: 300px;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 100%;
+    gap: 10px;
     background-color: black;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     font-family: 'Alumni Sans', sans-serif;
-    padding-top: 82px;
 }
 
-.box {
+.footer h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.footer a {
+    text-decoration: none;
     color: white;
     font-size: 20px;
-    padding-left: 80px;
 }
 
-.box a {
-    color: white;
+.footer a:hover {
+    color: #ed1c24;
 }
 
-svg:hover path {
-    fill: red;
-}
-
-.box-container a {
-    margin-top: 150px;
-    margin-left: 5px;
-}
-
-.box a:hover {
-    color: var(--red);
-}
-
-.credit {
+.footer2 {
+    height: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     background-color: black;
-    text-align: center;
+}
+
+.footer2 p {
     color: white;
     font-family: 'Alumni Sans', sans-serif;
-    font-size: 20px;
-    width: 1440px;
-    font-weight: 100;
+    margin: 0 auto 10px 10px;
+}
+
+.footer2 a {
+    margin: 10px;
+}
+
+@media screen and (max-width:500px){
+    
+    body {
+        width: 100%;
+        max-height: 600px;
+    }
+
+    body img {
+        max-width: 100%;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .icons {
+        margin-right: 30px;
+    }
+    
+    .icons a{
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    .icons :nth-child(3) {
+        display: none;
+    }
+    
+    .logo {
+        font-size: 40px;
+    }
+    
+    .searchbar {
+        border-radius: 30px;
+        background: #D9D9D9;
+        height: 20px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 10px;
+        margin: auto 30px auto 30px;
+    }
+    
+    .searchbar :nth-child(1) {
+        color: black;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    /*FOOTER CONTENT*/ 
+    
+    .footer h3 {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+    
+    .footer2 {
+        height: 3%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: black;
+    }
+    
+    .footer2 p {
+        color: white;
+        font-family: 'Alumni Sans', sans-serif;
+        margin: 0 auto 10px 10px;
+    }
+    
+    .footer2 svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer2 a {
+        margin: 5px;
+    }
+
+    
 }
