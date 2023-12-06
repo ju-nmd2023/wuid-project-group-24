@@ -1,92 +1,16 @@
 // Save the HTML Data
-const products = [
-  {
-    img: "PS-images/baldurs-gate.jpeg",
-    name: `Balurs Gate`,
-    priceCents: 5800,
-  },
-  {
-    img: "PS-images/call-of-duty.jpeg",
-    name: `Call Of Duty`,
-    priceCents: 4900,
-  },
-  {
-    img: "PS-images/death-standing.jpeg",
-    name: `Death Standing`,
-    priceCents: 3900,
-  },
-  {
-    img: "PS-images/diablo.jpeg",
-    name: `Diablo`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/elden-ring.jpeg",
-    name: `Elden Ring`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/farcry.jpeg",
-    name: `Farcy`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/final-fantasy.jpeg",
-    name: `Final Fantasy`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/gran-turismo.jpeg",
-    name: `Gran Turismo 7`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/gta.jpeg",
-    name: `Grand Theft Auto V`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/hogwarts-legacy.jpeg",
-    name: "Hogwarts Legacy",
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/horizon.jpeg",
-    name: `Horizon`,
-    priceCents: 5800,
-  },
-  {
-    img: "PS-images/jedi.jpeg",
-    name: `Judi Fall Order`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/lies-of-p.jpeg",
-    name: `Lies Of P`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/mirage.jpeg",
-    name: `Assassins Creed Mirage`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/spider-man.jpeg",
-    name: `Spider-Man`,
-    priceCents: 5900,
-  },
-  {
-    img: "PS-images/the-witcher.jpeg",
-    name: `The Witcher`,
-    priceCents: 5900,
-  },
-];
-let productsHTML = "";
+import { heart } from "../js/cart.js"
+import { cart } from "../js/cart.js"
+import { saveToStorage } from "../js/cart.js"
+import { products } from "../js/cartdata.js"
 
+
+let productsHTML = "";
 products.forEach((product) => {
   productsHTML += ` <div class="product-container">
 	<div class="product-img-container">
 			<img src="${product.img}"alt="">
+    
 	</div>
 	<div class="product-name limit-text-to-2-lines">
 	${product.name}
@@ -109,26 +33,27 @@ products.forEach((product) => {
 			</select>
 	</div>
 	<div class="product-spacer"></div>
-	<button class="add-to-cart js-add-to-cart" data-product-name="${product.name}">
+	<button class="add-to-cart js-add-to-cart" data-product-id="${product.id}">
 			<p>Add to Cart</p>
 	</button>
-	<button class="add-to-heart js-add-to-heart" data-product-name="${
-    product.name
-  }">
+	<button class="add-to-heart js-add-to-heart" data-product-id="${product.id
+    }">
 			<p>Add to Heart</p>
 	</button>
 </div>
 `;
 });
 //Generate the Html
-document.querySelector(".js-products-grid").innerHTML = productsHTML;
+
+document.querySelector('.js-products-grid').innerHTML = productsHTML;
+console.log(productsHTML)
 //add the quantity number for the cart
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener(`click`, () => {
-    const productName = button.dataset.productName;
+    const productId = button.dataset.productId;
     let matchingItem;
     cart.forEach((item) => {
-      if (productName === item.productName) {
+      if (productId === item.productId) {
         matchingItem = item;
       }
     });
@@ -136,10 +61,12 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       matchingItem.quantity += 1;
     } else {
       cart.push({
-        productName: productName,
+        productId: productId,
         quantity: 1,
       });
     }
+    saveToStorage();
+
     let cartQuantity = 0;
     cart.forEach((item) => {
       cartQuantity += item.quantity;
@@ -152,10 +79,10 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
 //add the quantity number for the heart
 document.querySelectorAll(".js-add-to-heart").forEach((button) => {
   button.addEventListener("click", () => {
-    const productName = button.dataset.productName;
+    const productId = button.dataset.productId;
     let matchingItem;
     heart.forEach((item) => {
-      if (productName === item.productName) {
+      if (productId === item.productId) {
         matchingItem = item;
       }
     });
@@ -163,7 +90,7 @@ document.querySelectorAll(".js-add-to-heart").forEach((button) => {
       matchingItem.quantity = 1;
     } else {
       heart.push({
-        productName: productName,
+        productId: productId,
         quantity: 1,
       });
     }
@@ -176,3 +103,4 @@ document.querySelectorAll(".js-add-to-heart").forEach((button) => {
     console.log(heart);
   });
 });
+
