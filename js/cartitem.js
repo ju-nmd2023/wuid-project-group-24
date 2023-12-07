@@ -47,7 +47,7 @@ cart.forEach((cartItem) => {
 															$${(matchingProduct.priceCents / 100).toFixed(2)}
 													</div>
 													<div class="product-platformname">
-															<a href="#">Platform: PS5</a>
+															<a href="#">Platform: ${matchingProduct.platForm}</a>
 													</div>
 													<div class="product-quantity">
 															<span class="product-quantity-container">
