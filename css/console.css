@@ -108,7 +108,6 @@ ul a {
 }
 
 /*MAIN CONTENT*/
-
 .console-menu {
   width: 100%;
   display: flex;
@@ -124,6 +123,7 @@ ul a {
   border-radius: 20px;
   margin: 10px;
   text-align: center;
+  border: black solid 1px;
 }
 
 .xbox {
@@ -132,6 +132,7 @@ ul a {
   border-radius: 20px;
   margin: 10px;
   text-align: center;
+  border: black solid 1px;
 }
 
 .nintendo {
@@ -140,6 +141,7 @@ ul a {
   border-radius: 20px;
   margin: 10px;
   text-align: center;
+  border: black solid 1px;
 }
 
 .sony a {
@@ -181,20 +183,27 @@ ul a {
   text-decoration: none;
 }
 
-.other a:hover {
-  color: var(--red);
+.console-menu .sony:hover {
+  cursor: pointer;
+  border: var(--blue) solid 1px;
+  transition: 500ms;
 }
 
-.sony > a:hover {
-  color: var(--red);
+.console-menu .xbox:hover {
+  cursor: pointer;
+  border: var(--blue) solid 1px;
+  transition: 500ms;
 }
 
-.xbox > a:hover {
-  color: var(--red);
+.console-menu .nintendo:hover {
+  cursor: pointer;
+  border: var(--blue) solid 1px;
+  transition: 500ms;
 }
 
-.nintendo > a:hover {
-  color: var(--red);
+.console-menu .other:hover {
+  background-color: #274479;
+  transition: 500ms;
 }
 /*FOOTER CONTENT*/ 
 
@@ -244,8 +253,9 @@ ul a {
   margin: 10px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:1170px){
   
+  /*header and nav*/
   header {
     height: 150px;
   }
@@ -253,44 +263,35 @@ ul a {
   .icons {
     margin-right: 30px;
   }
-  
+
   .icons a{
-    text-decoration: none;
     font-size: 30px;
     padding-left: 15px;
-    color: white;
   }
 
   .icons :nth-child(3) {
     display: none;
   }
-  
+
   .logo {
     font-size: 40px;
   }
-  
+
   .searchbar {
-    border-radius: 30px;
-    background: #D9D9D9;
-    height: 20px;
     flex-grow: 1;
     flex-shrink: 1;
-    padding: 10px;
     margin: auto 30px auto 30px;
   }
-  
+
   .searchbar :nth-child(1) {
-    color: black;
-    text-decoration: none;
     margin-top: 2px;
   }
-  
+
   .nav {
     display: none;
   }
 
-  /*MAIN CONTENT*/
-
+  /*main*/
   .other {
     width: 70%;
     height: 40px;
@@ -301,42 +302,14 @@ ul a {
     font-size: 20px;
   }
 
-  /*FOOTER CONTENT*/ 
-  
+  /*footer*/ 
   .footer h3 {
-    color: white;
     font-size: 20px;
   }
-  
+
   .footer a {
-    text-decoration: none;
-    color: white;
     font-size: 17px;
   }
-  
-  .footer2 {
-    height: 3%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-color: black;
-  }
-  
-  .footer2 p {
-    color: white;
-    font-family: 'Alumni Sans', sans-serif;
-    margin: 0 auto 10px 10px;
-  }
-  
-  .footer2 svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer2 a {
-    margin: 5px;
-  }
-
   
 }
 
