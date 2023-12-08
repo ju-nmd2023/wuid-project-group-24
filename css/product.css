@@ -3,35 +3,23 @@
   --red: #ed1c24;
 }
 
-* {
-  padding: 0;
+body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/*HEADER CONTENT*/
 header {
   width: 100%;
   height: 10%;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 2.2%;
-  background-color: black;
-}
-
-header {
-  width: 100%;
-  height: 20%;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
@@ -39,16 +27,28 @@ header {
   justify-content: space-between;
 }
 
+.icons {
+  margin-left: auto;
+}
+
+.icons a{
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 15px;
+  color: white;
+}
+
 .icons a:hover {
   color: var(--blue);
 }
 
 .logo {
-  color: #395da2;
+  color: #395DA2;
   font-weight: bolder;
   font-size: 50px;
-  font-style: normal;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .LOGO a:hover {
@@ -57,144 +57,145 @@ header {
 
 .searchbar {
   border-radius: 30px;
-  background: #d9d9d9;
+  background: white;
   width: 368px;
-  height: 43px;
-  margin-left: 600px;
-  flex-shrink: 0;
+  height: 20px;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 
 .searchbar :nth-child(1) {
-  margin-top: 4px;
-  margin-left: 10px;
   color: black;
+  text-decoration: none;
+  margin-top: 2px;
 }
 
 .searchbar input {
   width: 90%;
-  height: 100%;
   border: none;
   outline: none;
-  background: #d9d9d9;
+  background: white;
 }
 
-.icons :nth-child(1) {
-  color: white;
-  font-size: 30px;
-}
-
-.icons :nth-child(2) {
-  color: white;
-  font-size: 28px;
-  padding-left: 20px;
-}
-
-.icons :nth-child(3) {
-  color: white;
-  font-size: 28px;
-  padding-left: 20px;
-}
-
-.nav {
-  width: 100%;
+/*NAV CONTENT*/
+.nav ul{
   height: 57px;
-  margin-top: 0px;
-  background: rgba(0, 0, 0, 0.29);
+  background: rgba(21, 21, 23, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0 30px 0 30px;
+  gap: 30px;
 }
 
-.nav li {
-  display: inline-block;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.ul .nav a:hover {
-  color: var(--blue);
+ul a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
 }
 
 .nav li a:hover {
   color: var(--red);
 }
 
+/*MAIN*/
 .back {
-  margin-left: 20px;
-  font-size: 20px;
-  padding: 20px;
+  display: flex;
+  padding-top: 10px;
+  margin: 5px 0 50px 30px;
 }
 
-.back > a {
+.back a{
+  font-family: 'Alumni Sans';
+  text-decoration: none;
   color: white;
-  font-family: "Alumni Sans", sans-serif;
+  font-size: 20px;
 }
 
-.back > a:hover {
+.back p {
+  font-family: 'Alumni Sans';
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 5px 0 5px;
+}
+
+.back a:hover {
   color: var(--red);
 }
 
-.menu {
-  display: inline-block;
-  justify-content: space-between;
-  text-align: center;
-  color: #fff;
-  font-family: "Orbitron", sans-serif;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding: 0 2rem;
-  margin-top: 14px;
-  width: 100%;
-  height: 100vh;
-}
-
-/*MAIN*/
-
-body {
-  background: #202020 no-repeat;
-  width: 100%;
-  height: 100vh;
-}
-
 .xbox-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  padding: 30px 40px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(21, 21, 23, 1);
 }
 
-.xbox-img {
-  grid-column: 1/1;
-  width: 250%;
-  border: #d9d9d9 solid 3px;
-  margin-left: 50px;
+.info-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-info {
-  grid-column: 4/4;
-  padding-left: 30%;
-  width: 550px;
+.info-img img{
+  width: 50%;
+  height: auto;
+  border: white solid 2px;
 }
 
-.product-info h1 {
-  text-align: center;
+.h1-p {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.h1-p h1 {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  margin: 30px 0 10px 0;
+  text-align: left;
+  width: 100%;
+}
+
+h6 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
   font-family: "Alumni Sans", sans-serif;
-  color: white;
-  font-size: 38px;
-  letter-spacing: 8px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  border: solid white 2px;
+  background-color: white;
 }
 
-.info-container {
-  padding: 20px 30px;
-  background-color: black;
-  border-radius: 10px;
-  margin-top: 20px;
+.h1-p p {
+  color: white;
+  font-size: 25px;
+  margin: 10px 0 30px 0;
+  font-family: 'Alumni Sans';
 }
 
-.info-container p {
-  color: white;
-  line-height: 1.5;
-  font-weight: lighter;
-  font-size: 14px;
+#quantity {
+  width: 40px;
+  height: 20px;
 }
 
 .btn {
@@ -202,42 +203,43 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  column-gap: 25px;
-  margin-top: 25px;
+  column-gap: 15px;
 }
 
 .btn-heart {
   background-color: rgba(57, 93, 162, 1);
   color: white;
-  width: 120px;
-  height: 30px;
-  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-heart:hover {
-  background-color: white;
-  color: rgba(57, 93, 162, 1);
+  background-color:  rgb(21, 38, 69);
+  transition: 1s;
 }
 
 .btn-cart {
   background-color: rgba(57, 93, 162, 1);
   color: white;
-  width: 120px;
-  height: 30px;
-  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btn-cart:hover {
-  color: rgba(57, 93, 162, 1);
-  background-color: white;
+  background-color:  rgb(21, 38, 69);
+  transition: 500ms;
 }
 
 .product {
@@ -248,36 +250,18 @@ body {
   align-items: center;
 }
 
-.product h6 {
-  font-size: 24px;
-  color: white;
-  font-family: "Alumni Sans", sans-serif;
-}
-
-#quantity {
-  width: 100px;
-  height: 20px;
-}
-
-/*FOOTER*/
-
-.footer {
-  background: #000;
-  width: 100%;
-  margin-top: 300px;
-}
-
+/*FOOTER CONTENT*/ 
 .footer .box-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 10%;
+  height: 20%;
   width: 100%;
   gap: 10px;
   background-color: black;
   justify-content: space-around;
   text-align: center;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: 'Alumni Sans', sans-serif;
 }
 
 .footer h3 {
@@ -296,7 +280,6 @@ body {
 }
 
 .footer2 {
-  height: 5%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -305,7 +288,7 @@ body {
 
 .footer2 p {
   color: white;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: 'Alumni Sans', sans-serif;
   margin: 0 auto 10px 10px;
 }
 
@@ -313,208 +296,82 @@ body {
   margin: 10px;
 }
 
-.box {
-  color: white;
-  font-size: 20px;
-  padding-left: 80px;
-  margin-top: 30px;
-}
+/*MEDIA QUARIES*/
+@media screen and (max-width:1170px){
 
-.box a {
-  color: white;
-}
-
-svg:hover path {
-  fill: red;
-}
-
-.box-container a {
-  margin-top: 150px;
-  margin-left: 5px;
-}
-
-.box a:hover {
-  color: var(--red);
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    width: 100%;
-    max-height: 600px;
-  }
-
-  body img {
-    max-width: 100%;
-  }
-
+  /*header and nav*/
   header {
     height: 150px;
-    display: flex;
-    flex-direction: row;
   }
 
   .icons {
     margin-right: 30px;
   }
-
-  .icons a {
-    text-decoration: none;
+    
+  .icons a{
     font-size: 30px;
     padding-left: 15px;
-    color: white;
   }
 
   .icons :nth-child(3) {
     display: none;
   }
-
+    
   .logo {
     font-size: 40px;
   }
-
+    
   .searchbar {
-    border-radius: 30px;
-    background: #d9d9d9;
-    height: 20px;
     flex-grow: 1;
     flex-shrink: 1;
-    padding: 10px;
     margin: auto 30px auto 30px;
-  }
-
+    }
+    
   .searchbar :nth-child(1) {
-    color: black;
-    text-decoration: none;
-    margin-top: 2px;
+     margin-top: 2px;
   }
-
+    
   .nav {
     display: none;
   }
-
-  /*MAIN CONTENT*/
-
-  .body {
-    padding: 0;
+    
+  /*main*/
+  .back {
+    display: none;
   }
 
-  .xbox-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0;
-    background-color: rgba(21, 21, 23, 1);
-    width: 100%px;
+  .info-img {
+    flex-direction: column;
+    margin-top: 0;
   }
 
-  .xbox-img {
-    grid-column: 1/1;
-    grid-row: 1/2;
+  .info-img img {
     width: 100%;
-    margin-left: 0;
-    padding: 0;
+    border: none;
   }
 
-  .product-info {
-    grid-column: 1/1;
-    grid-row: 2/2;
-    height: 50%;
-    padding: 0;
+  .h1-p {
+    width: 90%;
+    margin: auto;
+  }
+  .h1-p h1 {
     width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  .info-container {
-    padding: 20px 30px;
-    background-color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-
-  .info-container p {
-    color: white;
-    line-height: 1.5;
-    font-weight: lighter;
-    font-size: 14px;
-  }
-
-  .btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 25px;
-    margin-top: 25px;
-  }
-
-  .btn-heart {
-    width: 50%;
-  }
-
-  .btn-cart {
-    width: 50%;
-  }
-
-  .btn-cart:hover {
-    color: rgba(57, 93, 162, 1);
-    background-color: white;
-  }
-
-  .product {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 30px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .product h6 {
-    font-size: 24px;
-    color: white;
-    font-family: "Alumni Sans", sans-serif;
-  }
-
-  #quantity {
-    width: 100px;
-    height: 30px;
-  }
-
-  /*FOOTER CONTENT*/
-
-  footer {
-    width: 100%;
-  }
-
-  .footer h3 {
-    color: white;
+  .h1-p p {
+    margin-top: 30px;
     font-size: 20px;
   }
-
+  
+  /*footer*/ 
+  .footer h3 {
+    font-size: 20px;
+  }
+    
   .footer a {
-    text-decoration: none;
-    color: white;
     font-size: 17px;
-  }
-
-  .footer2 {
-    height: 3%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-color: black;
-  }
-
-  .footer2 p {
-    color: white;
-    font-family: "Alumni Sans", sans-serif;
-    margin: 0 auto 10px 10px;
-  }
-
-  .footer2 svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer2 a {
-    margin: 5px;
-  }
+  } 
 }
