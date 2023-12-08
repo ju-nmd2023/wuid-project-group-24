@@ -80,7 +80,28 @@ header {
   }
 
 /*NAV SECTION*/
-.nav ul{
+.nav .toggleButton {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 15px;
+
+
+}
+
+.nav .toggleButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav .nav-bar ul {
     height: 57px;
     background: rgba(0, 0, 0, 0.29);
     display: flex;
@@ -89,6 +110,8 @@ header {
     list-style-type: none;
     padding: 0 30px 0 30px;
     gap: 30px;
+
+
 }
 
 ul {
@@ -281,7 +304,7 @@ main .flex-container {
     }
 
     .icons {
-        margin-right: 30px;
+        margin-right: 65px;
     }
     
     .icons a{
@@ -307,8 +330,56 @@ main .flex-container {
         margin-top: 2px;
     }
     
+    .nav .toggleButton {
+        display: flex;
+    }
+
     .nav {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .nav .nav-bar {
+        margin-top: 20px;
+        padding-left: 20px;
+        border: 0.5px solid black;
+        padding-top: -10px;
         display: none;
+    }
+
+    .nav .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-top: -30px;
+        background: black;
+        height: 600px;
+
+
+
+    }
+
+    .nav-bar ul li {
+        background: grey;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+    }
+
+    .nav-bar ul li a:hover {
+        color: var(--red);
+    }
+
+    .nav ul a {
+        color: white;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
     }
 
     /*MAIN CONTENT*/
