@@ -104,9 +104,11 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
+    width: 25px;
     height: 21px;
-    margin-top: 15px;
+    margin-top: 13px;
+    margin-right:-10.5px;
+    
 
 
 }
@@ -723,8 +725,56 @@ ul a {
 
     }
 
+    .nav .toggleButton {
+        display: flex;
+    }
+
     .nav {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .nav .nav-bar {
+        margin-top: 20px;
+        padding-left: 20px;
+        border: 0.5px solid black;
+        padding-top: -10px;
         display: none;
+    }
+
+    .nav .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin-top: -30px;
+        background: black;
+        height: 600px;
+
+
+
+    }
+
+    .nav-bar ul li {
+        background: grey;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+
+    }
+
+    .nav-bar ul li a:hover {
+        color: var(--red);
+    }
+
+    .nav ul a {
+        color: white;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
     }
 
     .back a {
